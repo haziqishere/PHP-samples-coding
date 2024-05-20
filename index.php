@@ -2,11 +2,12 @@
     // Connect to database
     include("database.php");
 
-    $username = "Squidward";
-    $password = "clarinet2";
+    $username = "patrick";
+    $password = "rock3";
+    $hash = password_hash($password, PASSWORD_DEFAULT);
 
     $sql = "INSERT INTO user (username, password)
-            VALUES ('$username', '$password')";
+            VALUES ('$username', '$hash')";
 
     try{
         // Insert new user into database
