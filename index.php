@@ -1,18 +1,15 @@
 <?php
-    /* hashing = transforming sensitive data (password)
-                 into letters, numbers, and/or symbols via
-                 mathematical process.
-    */
-
-    $password = "pizza123";
-    $hash = password_hash($password, PASSWORD_DEFAULT);
-    // PASSWORD_DEFAULT : use bcrypth algorithm (default for PHP 5.5.0)
-
-    // Verify password
-    if(password_verify("pizza123", $hash)) {
-        echo"You are logged in!";
-    }
-    else {
-        echo"Incorrect password";
-    }
+    // Connect to database
+    include("database.php");
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hello<br>
+</body>
+</html>
